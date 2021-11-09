@@ -1,0 +1,8 @@
+@keyframes slideshow-fadein {
+    from {
+        opacity: .1;
+    }
+    to {
+        opacity: 1;
+    }
+}

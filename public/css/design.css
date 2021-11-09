@@ -1,0 +1,36 @@
+body {
+    font-family: Maiandra GD;
+    padding: 0;
+    margin: 0;
+}
+main.limited {
+    max-width: var(--x-limit);
+    margin: auto;
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    /** NAVBAR **/
+    --nav-bg: var(--primary-shade);
+    --nav-text: var(--primary-contrast);
+    --nav-text-hover:var(--primary);
+    --nav-bg-hover:var(--light);
+
+
+    /** FOOTER **/
+    --footer-bg: var(--dark);
+    --footer-text: var(--light);
+
+    /** LAYOUT **/
+    --x-limit: 1440px;
+}
