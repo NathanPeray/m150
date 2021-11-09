@@ -1,0 +1,31 @@
+nav {
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    padding: 1em 0;
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    max-width: var(--x-limit);
+}
+nav li {
+    display: inline-block;
+    text-align: center
+}
+nav li:hover a {
+    color: var(--nav-text-hover);
+    text-decoration: underline;
+}
+nav li a.active {
+    color: var(--nav-text-hover);
+    text-decoration: underline;
+}
+nav a {
+    display: block;
+    padding: 0.5em 1em;
+    color: inherit;
+}
+nav .dropbox {
+    display: none;
+}

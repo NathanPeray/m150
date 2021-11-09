@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+.teaser {
+    max-width: 450px;
+    background-color: #3337;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: 8%;
+    margin-top: 150px;
+    color: #fff;
+    border-radius: 10px;
+}
+.teaser h1 {
+    margin: 0;
+}
+.teaser p {
+    line-height: 1.5em;
+    margin: 0;
+    margin-top: 2em;
+}
+.teaser-link {
+    margin-top: 2em;
+    display: block;
+    background-color: var(--primary-shade);
+    padding: .5em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.teaser-link:hover  {
+    box-shadow: -5px 5px 10px var(--dark);
+}
