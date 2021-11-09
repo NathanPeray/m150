@@ -1,0 +1,22 @@
+{
+        "auth"      : ["/\\{auth\\}/", true],
+        "endauth"   : ["/\\{endauth\\}/", "auth"],
+        "role"      : ["/\\{role\\(+(.*?)+\\)\\}/", true],
+        "endrole"   : ["/\\{endrole\\}/", "role"],
+        "guest"     : ["/\\{guest\\}/", true],
+        "endguest"  : ["/\\{endguest\\}/", "gues"],
+        "extends"   : ["/\\{extends\\(+(.*?)+\\)\\}/", false],
+        "include"   : ["/\\{include\\(+(.*?)+\\)\\}/", false],
+        "section"   : ["/\\{section\\(+(.*?)+\\)\\}/", true],
+        "endsection": ["/\\{endsection\\}/", "section"],
+        "content"   : ["/\\{content\\(+(.*?)+\\)\\}/", false],
+        "if"        : ["/\\{if\\(+(.*?)+\\)\\}/", true],
+        "elif"      : ["/\\{elif\\(+(.*?)+\\)\\}/", "if"],
+        "else"      : ["/\\{else\\}/", "if"],
+        "endif"     : ["/\\{endif\\}/", "if"],
+        "for"       : ["/\\{for\\(+(.*?)+\\)\\}/", true],
+        "foreach"   : ["/\\{foreach\\(+(.*?)+\\)\\}/", true],
+        "endfor"    : ["/\\{endfor\\}/", "for"],
+        "endforeach": ["/\\{endforeach\\}/", "foreach"],
+        "echo"      : [ "/\\{\\{+(.*?)+\\}\\}/", false]
+}

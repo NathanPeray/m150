@@ -1,0 +1,5 @@
+MVC - Parser
+JS - Dependency Loader
+PHP - Autoloader (Modules etc)
+CI / CD
+DB Controller implemented

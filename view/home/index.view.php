@@ -1,10 +1,36 @@
-<main>
-    @@partial(home.intro)
-</main>
-@@auth
-<i class="fas fa-camera"></i>
-<i class="far fa-calendar-alt"></i>
+{auth}
+{role(%role)}
+{guest}
+{extends(%file)}
+{include(%file)}
+{section(%name)}
+{content(%name)}
 
-<i class="fab fa-facebook-square"></i>
-<i class="fab fa-instagram"></i>
-@@endauth
+
+{include(%file)}
+
+
+{for(%loop)}
+{include(%file)}
+{endfor}
+{foreach(%loop)}
+{endforeach}
+{{$var->irgendwas}}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {include('')}
+        <title></title>
+    </head>
+    <body>
+        {if()}
+            {if()}
+            {else}
+            {endif}
+        {elif()}
+        {else}
+        {endif}
+    </body>
+</html>

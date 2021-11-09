@@ -1,11 +1,13 @@
 <?php
-    class AppController {
 
-        function indexAction() {
-            return new View("home.index", "Grimm Photography");
-        }
-        function notFoundAction() {
+use natework\core\mvc\View;
+use natework\core\db\Builder;
+use natework\model\User;
 
-        }
+class AppController {
+
+    function indexAction() {
+        new View('home.index');
     }
+}
 ?>
